@@ -97,9 +97,11 @@ h3 {
 }
 .icons {
     margin-top: 4vh;
-    letter-spacing: 15px;
+    letter-spacing: 14px;
     color: #000
 }
+
+/* Start Responsive at 900px*/
 
 
 
