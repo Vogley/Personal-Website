@@ -59,51 +59,145 @@ h3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .desc {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    height: 90%;
-    width: 40%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 40%;
 }
 .profile-pic {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    height: 50%;
-    width: auto;
-    padding: 10px;
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 60%;
+  width: auto;
+  padding: 10px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
 }
 .profile-img {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
+
+
+
+/********************************
+    4. Footer
+********************************/
 .connect-container{
-  position: absolute;
-  left: 50%;
-  top: 65%;
-  width: 45%;
-  height: 30%;
-}
-.connect-container span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  border-radius: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  z-index: 1001;
 }
 .icons {
-    margin-top: 4vh;
-    letter-spacing: 14px;
-    color: #000
+  margin: 0 10px 10px 0;
+  letter-spacing: 1vw;
+  color: #000;
+  float: right;
 }
 
 /* Start Responsive at 900px*/
 
-
+/********************************
+    5. Skills
+********************************/
+.skill-info-container {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 20px 80px;
+  text-align: justify;
+}
+.skill-info {
+  width: 70%;
+}
+.skill-pic {
+  position: relative; 
+  top: 5%;
+  right: 5%;
+  height: 20%;
+  width: auto;
+  padding: 10px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.skill-img {
+  width: auto;
+  height: 100%;
+}
+.skill-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.skill-container > .col {
+  float: left;
+  width: 31%;
+  padding: 1%;
+}
+.skill-container > .col > h2 {
+  margin: 0px 0px 5px 5px;
+  font-size: 15px;
+}
+.skill-bar {
+  margin: 5px;
+  width: 100%;
+  height: 7px;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 2.5px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.skill-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+.red > span {
+  background-color: #f0a3a3;
+  background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+.orange > span {
+  background-color: #f1a165;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}
+.yellow > span {
+  background-color: #eff165;
+  background-image: linear-gradient(to bottom, #eff165, #ecf006);
+}
+.cyan > span {
+  background-color: #65f1d3;
+  background-image: linear-gradient(to bottom, #65f1d3, #0af3c1);
+}
+.blue > span {
+  background-color: #6586f1;
+  background-image: linear-gradient(to bottom, #6586f1, #0a40f3);
+}
+.purple > span {
+  background-color: #e165f1;
+  background-image: linear-gradient(to bottom, #e165f1, #c40af3);
+}
 
 
 
