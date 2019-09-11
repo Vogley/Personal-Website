@@ -233,7 +233,7 @@ h3 {
   text-align:center;
   margin: 2%;
   width: 20%;
-  height: 20%;
+  height: 250px;
   float: left;
   padding: 4px;
   background-image: linear-gradient(to right top, #efade3, #d8a9e9, #bda7ee, #9da5ef, #78a4ed, #619aea, #4391e6, #0088e3, #0073e0, #005ed9, #0046d0, #0c28c2);
@@ -241,6 +241,18 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #eee;
+}
+.project-title {
+  width: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.project-link {
+  position: relative;
+  bottom: -20px;
 }
 button {
   background: none;
@@ -252,8 +264,6 @@ button {
   color: #282E34;
   transition: 0.5s;
   cursor: pointer;
- 
-    
 }
 .fill-up:hover,
 .fill-up:focus {
