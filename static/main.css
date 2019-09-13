@@ -57,7 +57,7 @@ h3 {
 
 .bgimg-3 {
   background-image: url("../images/bgimg.jpg");
-  min-height: 400px;
+  min-height: 100%;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -66,6 +66,9 @@ h3 {
     background-attachment: scroll;
   }
 }
+
+
+
 
 /********************************
     3. Introduction
@@ -81,6 +84,121 @@ h3 {
   left: 5%;
   height: 85%;
   width: 40%;
+}
+.overlay {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 40%;
+  height: 85%;
+  background: url("../images/cardboard-flat.png");
+  opacity: 0.25;
+}
+.title-card {
+  display: block;
+  position: relative;
+  align-self: center;
+  /*stitching*/
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+  
+  background-color: #556068;
+  height: 16%;
+  margin: 3% 5%;
+  padding: 10px;
+  
+  /*shadow*/
+  -webkit-box-shadow: 2px 2px 2px #000;
+  -moz-box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
+}
+.text-left {
+  color: #0a0a0a;
+  text-align: center;
+  width: 100%;
+  float: left;
+  font-size: 50px;
+  font-family: 'TeXGyreAdventorBold';
+  text-transform: none;
+  height: 4vw;
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.para-card {
+  display: block;
+  position: relative;
+  align-self: center;
+  /*stitching*/
+  outline: 1px dashed #7ad3ae;
+  outline-offset: -5px;
+  
+  background-color: #51b1a1;
+  height: 67%;
+  margin: 3% 5%;
+  padding: 10px;
+  
+  /*shadow*/
+  -webkit-box-shadow: 2px 2px 2px #000;
+  -moz-box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
+}
+.para-card:before, 
+.para-card:after, 
+.para-card>:last-child:before, 
+.para-card>:last-child:after {
+    position: absolute;
+    width: 60px; 
+    height: 50px;
+    border-color: white; 
+    border-style: solid;
+    content: ' ';
+}
+ 
+.para-card:before {
+    top: 15px;
+    left: 15px;
+    border-width: 1px 0 0 1px
+}
+.para-card:after {
+    top: 15px;
+    right: 15px;
+    border-width: 1px 1px 0 0
+}
+.para-card>:last-child:before {
+    bottom: 15px;
+    right: 15px;     
+    border-width: 0 1px 1px 0
+}
+.para-card>:last-child:after {
+    bottom: 15px;
+    left: 15px;
+    border-width: 0 0 1px 1px
 }
 .profile-pic {
   position: absolute;
@@ -244,15 +362,20 @@ h3 {
   color: #eee;
 }
 .project-title {
+  margin-top: 4px; 
   width: 100%;
   letter-spacing: 3px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
 }
+.project-desc {
+  height: 140px;
+}
 .project-link {
   position: relative;
-  bottom: -20px;
+  bottom: 0px;
+  align-self: center;
 }
 button {
   background: none;
@@ -264,6 +387,7 @@ button {
   color: #282E34;
   transition: 0.5s;
   cursor: pointer;
+  box-shadow: 4px 3px 5px #000;
 }
 .fill-up:hover,
 .fill-up:focus {
