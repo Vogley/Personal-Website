@@ -7,26 +7,38 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="overlay"><span>Under Construction</span></div>
-
+    <!--div class="overlay"><span>Under Construction</span></div>-->
+    <div id="responsiveOverlay"><span>Page not ready yet for mobile devices. Please stay tuned.</span></div>
     <!--Intro-->
     <div class="bgimg-1">
+        <div class="overlay"></div>
         <div class="hover-card desc">
-            <h3 style="text-align:center;">Hello, I'm Tyler</h3>
-            <p></p>
+            <div class="title-card">
+                <div class="tracking-in-expand text-left">Hello, I'm <u><span style="color:#51b1a1">Tyler</span></u></div>
+            </div>
+            <div class="para-card">
+                    <div class="signature"><img src="https://fontmeme.com/permalink/190914/10c67ce81ea508ed5f8ae655fb484623.png" alt="signature-fonts" border="0"></div>
+                <div><p>I currently am a student at the University of Pittsburgh with a <b>hardware</b> computer engineering co-op position at Powercast. 
+                    Although my current position has been a great experience, I would like to move onto a position that enhances my <b>software</b> skills. 
+                    I have greatly improved both my web application skills and my object-oriented programming skills throughout the last year with my class work and <b>personal projects.</b>
+                        </p><p>My supervisors have always commented about my <b>hard-working</b> attitude towards every project I have been given. They consider me one of their best co-ops so far. 
+                            My co-op experience has shown me the importance of <b>teamwork</b> and learning from others. Ask me about my <b>current</b> work and projects!
+                </p></div>
+            </div>
         </div>
         <div class="profile-pic">
             <img class="profile-img" src="images/logo_transparent.png">
+            <div class="profile-desc">UNIVERSITY OF PITTSBURGH  COE 2020</div>
         </div>
     </div>
 
     <!--Footer-->
     <div class="connect-container">
         <div class="icons">
-            <i class="fa fa-linkedin fa-3x"></i>
-            <i class="fa fa-github fa-3x"></i>
-            <i class="fa fa-twitter fa-3x"></i>
-            <i class="fa fa-envelope fa-3x"></i>
+            <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x"></i></a>
+            <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x"></i></a>
+            <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
+            <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
         </div>
     </div>
 
@@ -61,7 +73,7 @@
                 </div>
             </div>
             <div class="col">
-                <h2>JavaScript</h2>
+                <h2>Javascript</h2>
                 <div class="skill-bar color1">
                     <span style="width:85%;"></span>
                 </div>
@@ -98,41 +110,46 @@
     </div>
 
     <!--Contact Information-->
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <div class="project-container" style="position:relative;">
             <h3 class="project-header">Receant Work</h3>
-            <div class="project-container">
-                <p>
-                    In the last few months, I have been interested in web applications and JavaScript. 
-                    JavaScript changes often and any modern web developer should be on the bleeding edge.
-                    Below I have some projects that I have receantly completed. I always want to be gaining new 
-                    coding skills and APIs, and projects like these help me learn.
-                </p>
-                <div class="projects">
-                    <div class="col">
-                        <div class="project-title">Dhyan's Website</div>
-                        <div class="project-desc">A website template modified from an existing template. This was a practice webpage so i could get used to hosting and creating stunning templates.</div>
-                        <div class="project-link"><a href="http://www.dhyanrajamani.com">Link</a></div>
+            <p>
+                In the last few months, I have been interested in web applications and Javascript. 
+                The meta behind Javascript changes often and any modern web developer should be on the bleeding edge.
+                Below I have some projects that I have receantly completed. I always want to be gaining new 
+                coding skills and APIs, and projects like these help me learn.
+            </p>
+            <div class="projects">
+                <div class="col">
+                    <div class="project-title">Music Website</div>
+                    <hr>
+                    <div class="project-desc">A website template modified from an existing template. This was a practice webpage so I could get used to hosting and creating stunning web templates.</div>
+                    <a class="project-link" href="http://www.dhyanrajamani.com"><button class="fill-up">Go to Site</button></a>
 
-                    </div>
-                    <div class="col">
-                        <div class="project-title">Cashify</div>
-                        <div class="project-desc">Over the summer, I was asked to create a web application for a class. The web application is a tool for financial transactions.</div>
-                        <div class="project-link"><a href="">Link</a></div>
+                </div>
+                <div class="col">
+                    <div class="project-title">Cashify</div>
+                    <hr>
+                    <div class="project-desc">Over the summer, I was asked to create a web application for a class. The web application is a tool for financial transactions.</div>
+                    <a class="project-link popup" href="" onmouseover="infoPopUp()" onmouseout="infoPopOff()"><button class="grey-out">
+                        <div id="myPopup" class="popuptext">This project isn't fitted to be online yet. Please check out my github for it!</div>
+                        View Project
+                    </button></a>
+                    
                         
-                    </div>
-                    <div class="col">
-                        <div class="project-title">Breakout</div>
-                        <div class="project-desc">A small JavaScript game that resembles the famous Breakout game.</div>
-                        <div class="project-link"><a href="">Link</a></div>
+                </div>
+                <div class="col">
+                    <div class="project-title">Breakout</div>
+                    <hr>
+                    <div class="project-desc">A small Javascript game that resembles the famous Breakout game. Game controls are in the (p)ause menu.</div>
+                    <a class="project-link" href="Js Breakout/breakout.html"><button class="fill-up">Play Breakout</button></a>
                         
-                    </div>
-                    <div class="col">
-                        <div class="project-title">Musical Exploration</div>
-                        <div class="project-desc">A project where I dived into audio APIs to test how FFts work in Javascript.</div>
-                        <div class="project-link"><a href="">Link</a></div>
+                </div>
+                <div class="col">
+                    <div class="project-title">Audio FFTs</div>
+                    <hr>
+                    <div class="project-desc">A project where I dived into audio APIs to test how FFTs work in Javascript. Music can be played from a file or from the microphone.</div>
+                    <a class="project-link" href="Music JS/music.html"><button class="fill-up">View Simulation</button></a>
                         
-                    </div>
                 </div>
             </div>
         </div>
@@ -140,19 +157,7 @@
 
     <div class="bgimg-3">
         <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME</span>
-        </div>
-    </div>
-
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-        </div>
-    </div>
-
-    <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">COOL!</span>
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME FOR MORE INFORMATION</span>
         </div>
     </div>
 
