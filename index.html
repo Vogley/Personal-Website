@@ -8,7 +8,7 @@
 </head>
 <body>
     <!--div class="overlay"><span>Under Construction</span></div>-->
-
+    <div id="responsiveOverlay"><span>Page not ready yet for mobile devices. Please stay tuned.</span></div>
     <!--Intro-->
     <div class="bgimg-1">
         <div class="overlay"></div>
@@ -17,21 +17,28 @@
                 <div class="tracking-in-expand text-left">Hello, I'm <u><span style="color:#51b1a1">Tyler</span></u></div>
             </div>
             <div class="para-card">
-                <div></div>
+                    <div class="signature"><img src="https://fontmeme.com/permalink/190914/10c67ce81ea508ed5f8ae655fb484623.png" alt="signature-fonts" border="0"></div>
+                <div><p>I currently am a student at the University of Pittsburgh with a <b>hardware</b> computer engineering co-op position at Powercast. 
+                    Although my current position has been a great experience, I would like to move onto a position that enhances my <b>software</b> skills. 
+                    I have greatly improved both my web application skills and my object-oriented programming skills throughout the last year with my class work and <b>personal projects.</b>
+                        </p><p>My supervisors have always commented about my <b>hard-working</b> attitude towards every project I have been given. They consider me one of their best co-ops so far. 
+                            My co-op experience has shown me the importance of <b>teamwork</b> and learning from others. Ask me about my <b>current</b> work and projects!
+                </p></div>
             </div>
         </div>
         <div class="profile-pic">
             <img class="profile-img" src="images/logo_transparent.png">
+            <div class="profile-desc">UNIVERSITY OF PITTSBURGH  COE 2020</div>
         </div>
     </div>
 
     <!--Footer-->
     <div class="connect-container">
         <div class="icons">
-            <i class="fa fa-linkedin fa-3x"></i>
-            <i class="fa fa-github fa-3x"></i>
-            <i class="fa fa-twitter fa-3x"></i>
-            <i class="fa fa-envelope fa-3x"></i>
+            <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x"></i></a>
+            <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x"></i></a>
+            <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
+            <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
         </div>
     </div>
 
@@ -123,21 +130,25 @@
                     <div class="project-title">Cashify</div>
                     <hr>
                     <div class="project-desc">Over the summer, I was asked to create a web application for a class. The web application is a tool for financial transactions.</div>
-                    <a class="project-link" href=""><button class="fill-up">View Project</button></a>
+                    <a class="project-link popup" href="" onmouseover="infoPopUp()" onmouseout="infoPopOff()"><button class="grey-out">
+                        <div id="myPopup" class="popuptext">This project isn't fitted to be online yet. Please check out my github for it!</div>
+                        View Project
+                    </button></a>
+                    
                         
                 </div>
                 <div class="col">
                     <div class="project-title">Breakout</div>
                     <hr>
                     <div class="project-desc">A small Javascript game that resembles the famous Breakout game. Game controls are in the (p)ause menu.</div>
-                    <a class="project-link" href=""><button class="fill-up">Play Breakout</button></a>
+                    <a class="project-link" href="Js Breakout/breakout.html"><button class="fill-up">Play Breakout</button></a>
                         
                 </div>
                 <div class="col">
                     <div class="project-title">Audio FFTs</div>
                     <hr>
                     <div class="project-desc">A project where I dived into audio APIs to test how FFTs work in Javascript. Music can be played from a file or from the microphone.</div>
-                    <a class="project-link" href=""><button class="fill-up">View Simulation</button></a>
+                    <a class="project-link" href="Music JS/music.html"><button class="fill-up">View Simulation</button></a>
                         
                 </div>
             </div>
@@ -146,7 +157,7 @@
 
     <div class="bgimg-3">
         <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME</span>
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME FOR MORE INFORMATION</span>
         </div>
     </div>
 

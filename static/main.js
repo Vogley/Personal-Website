@@ -28,3 +28,16 @@ let callback = (entries, observer) => {
 let target = document.querySelector('#skills');
 let observer = new IntersectionObserver(callback, options);
 observer.observe(target);
+
+
+
+//Pop-Up function
+function infoPopUp() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function infoPopOff() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
