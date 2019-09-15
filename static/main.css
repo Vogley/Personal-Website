@@ -41,6 +41,22 @@ h3 {
     display: block;
   }
 }
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 
 /********************************
     2. Background Images
@@ -248,6 +264,11 @@ h3 {
   font-size: 12px;
   letter-spacing: 10px;
   color: rgb(37, 37, 37);
+}
+.resume {
+  position: absolute;
+  top: 85%;
+  left: 37%;
 }
 
 
@@ -487,23 +508,11 @@ button {
 
         
 
-
-
-
-.caption {
+/********************************
+    7. Contact
+********************************/
+.social2 {
   position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+  left: 40%;
+  top: 57%;
 }
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
