@@ -1,0 +1,161 @@
+/********************************
+    3. Introduction
+********************************/
+@media screen and (max-width: 975px) {
+    .desc {
+        height: 85%;
+        width: 55%;
+    }
+    .para-card > div{
+        line-height: 25px;
+        font-size: 1.55vw;
+    }
+    .signature {
+        bottom: 3%;
+        right: 20%;
+        width: 25%;
+    }
+    .profile-pic {
+        top: 10%;
+        right: 0%;
+        height: 39%;
+    }
+    .profile-desc {
+        top: 72%;
+        left: 12%;
+        width: 80%;
+        font-size: 12px;
+        letter-spacing: 10px;
+    }
+    .resume {
+        top: 95%;
+        left: 26%;
+    }
+}
+@media screen and (max-width: 730px) {
+    .hover-card {
+        box-shadow: 0;
+        z-index: 2;
+        border: 0;
+    }
+    .desc {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    .title-card {
+        display: none;
+        height: 10%;
+        padding-top: 5px;
+    }
+    .overlay {
+        display: none;
+    }
+    .para-card {
+        height: 45%;
+        position: absolute;
+        bottom: 0;
+    }
+    .para-card > .text{
+        margin-top: 20px;
+        height: 70%;
+        line-height: 28px;
+        font-size: 20px;
+        overflow: scroll;
+    }
+    .para-card > .text > p{
+        margin-top: 0;
+    }
+    .close {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+    }
+    .signature {
+        bottom: 3%;
+        right: 10%;
+        width: 25%;
+    }
+
+
+    .profile-pic {
+        top: 5%;
+        right: 0%;
+        height: 70%;
+        width: 100%;
+    }
+    .profile-img {
+        width: auto;
+        height: 50%;
+    }
+    .profile-desc {
+        text-align: center;
+        top: 40%;
+        width: 93%;
+        padding: 0 5px;
+        left: 5%;
+        font-size: 12px;
+        letter-spacing: 6px;
+    }
+    .resume {
+        top: 50%;
+        left: 0%;
+        width: 35%;
+        margin: 0px 32.5%;
+    }
+    .resume button {
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+
+
+
+
+
+
+/********************************
+    6. Projects
+********************************/
+@media screen and (max-width: 1205px) {
+    .project-container {
+        padding:50px 40px 20px 40px;
+    }
+    .projects > .col {
+        margin: 2% 8%;
+        width: 32%;
+        height: fit-content;
+        float: left;
+        padding: 4px;
+        padding-top: 7px;
+    }
+    .project-desc {
+        height: 130px;
+      }
+    .project-link {
+        bottom: 0.1vw;
+    }
+}
+@media screen and (max-width: 830px) {
+    .project-container {
+        padding:10px 5px 20px 0px;
+    }
+    .project-container > p {
+        margin: 0px 7vw;
+    }
+    .projects > .col {
+        margin: 4% 9%;
+        width: 80%;
+        height: fit-content;
+        float: left;
+        padding: 4px;
+    }
+    .project-desc {
+        height: fit-content;
+      }
+    .project-link {
+        bottom: 0.1vw;
+    }
+}

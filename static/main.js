@@ -1,3 +1,4 @@
+AOS.init();
 
 //Observer for Animations
 let options = {
