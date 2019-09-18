@@ -4,43 +4,33 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="static/main.css">
+    <link rel="stylesheet" type="text/css" href="static/responsive.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!--div class="overlay"><span>Under Construction</span></div>-->
-    <div id="responsiveOverlay"><span>Page not ready yet for mobile devices. Please stay tuned.</span></div>
     <!--Intro-->
     <div class="bgimg-1">
         <div class="overlay"></div>
         <div class="hover-card desc">
             <div class="title-card">
-                <div class="tracking-in-expand text-left">Hello, I'm <u><span style="color:#51b1a1">Tyler</span></u></div>
+                <div class="tracking-in-expand text-center">Hello, I'm <u><span style="color:#51b1a1">Tyler</span></u></div>
             </div>
-            <div class="para-card">
-                    <div class="signature"><img src="https://fontmeme.com/permalink/190914/10c67ce81ea508ed5f8ae655fb484623.png" alt="signature-fonts" border="0"></div>
-                <div><p>I currently am a student at the University of Pittsburgh with a <b>hardware</b> computer engineering co-op position at Powercast. 
+            <div class="para-card" id="bio">
+                <div class="signature"><img src="https://fontmeme.com/permalink/190914/10c67ce81ea508ed5f8ae655fb484623.png" alt="signature-fonts" border="0"></div>
+                <div class="text"><p>I currently am a student at the University of Pittsburgh with a <b>hardware</b> computer engineering co-op position at Powercast. 
                     Although my current position has been a great experience, I would like to move onto a position that enhances my <b>software</b> skills. 
                     I have greatly improved both my web application skills and my object-oriented programming skills throughout the last year with my class work and <b>personal projects.</b>
                         </p><p>My supervisors have always commented about my <b>hard-working</b> attitude towards every project I have been given. They consider me one of their best co-ops so far. 
                             My co-op experience has shown me the importance of <b>teamwork</b> and learning from others. Ask me about my <b>current</b> work and projects!
                 </p></div>
             </div>
+            <button class="open-bio" id="openBio" onclick="openBio()">About Me</button>
         </div>
         <div class="profile-pic">
             <img class="profile-img" src="images/logo_transparent.png">
             <div class="profile-desc">UNIVERSITY OF PITTSBURGH  COE 2020</div>
             <a href="Resume_Fall19.pdf" class="resume"><button class="fill-up" onclick="toggleResume()">Resume</button></a>
-        </div>
-    </div>
-
-    <!--Footer-->
-    <div class="connect-container">
-        <div class="icons">
-            <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x"></i></a>
-            <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x"></i></a>
-            <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
-            <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
         </div>
     </div>
 
@@ -58,62 +48,62 @@
                 Ask about my co-op experience at Powercast to learn more about the technical skills I have picked up there, and my new provisional <b>patent</b> I have acquired.
             </p>
         </div>
-        <!--<div class="skill-pic">
-            <img class="skill-img" src="images/skills.png">
-        </div>-->
+        <hr>
+        <i id="arrow" class="fa fa-angle-down fa-3x" onclick="toggleSkills()"><span id="skill-btn">&emsp;Skills</span></i>
+        <hr>
         <div id="skills" class="skill-container">
-            <div class="col">
+            <div id="observation" class="col">
                 <h2>Java</h2>
                 <div class="skill-bar">
-                    <span style="width:75%;"></span>
+                    <span style="width:85%;"></span>
                 </div>
                 <h2>Python</h2>
                 <div class="skill-bar color3">
-                    <span style="width:45%;"></span>
+                    <span style="width:55%;"></span>
                 </div>
                 <h2>C/Embedded</h2>
                 <div class="skill-bar color5">
-                    <span style="width:30%;"></span>
+                    <span style="width:40%;"></span>
                 </div>
                 <h2>C#</h2>
                 <div class="skill-bar color2">
-                    <span style="width:25%;"></span>
+                    <span style="width:35%;"></span>
                 </div>
             </div>
             <div class="col">
                 <h2>Javascript</h2>
                 <div class="skill-bar color2">
-                    <span style="width:85%;"></span>
+                    <span style="width:95%;"></span>
                 </div>
                 <h2>HTML/CSS</h2>
                 <div class="skill-bar color4">
-                    <span style="width:75%;"></span>
+                    <span style="width:85%;"></span>
                 </div>
-                <h2>Visual Basic</h2>
+                <h2>Mobile Apps</h2>
                 <div class="skill-bar color3">
-                    <span style="width:25%;"></span>
+                    <span style="width:30%;"></span>
                 </div>
                 <h2>SQL</h2>
                 <div class="skill-bar">
-                    <span style="width:35%;"></span>
+                    <span style="width:45%;"></span>
                 </div>
             </div>
             <div class="col">
                 <h2>Circuit Design</h2>
                 <div class="skill-bar color5">
-                    <span style="width:85%;"></span>
+                    <span style="width:95%;"></span>
                 </div>
                 <h2>Embedded Systems</h2>
                 <div class="skill-bar color1">
-                    <span style="width:65%;"></span>
+                    <span style="width:75%;"></span>
                 </div>
                 <h2>Antenna Theory</h2>
                 <div class="skill-bar color2">
-                    <span style="width:50%;"></span>
+                    <span style="width:60%;"></span>
                 </div>
                 <h2>Signal Processing</h2>
                 <div class="skill-bar color4">
-                    <span style="width:40%;"></span>
+                    <span style="width:50%;"></span>
                 </div>
             </div>
         </div>
@@ -125,9 +115,9 @@
         </div>
     </div>
 
-    <!--Contact Information-->
+    <!--Projects-->
     <div class="project-container" style="position:relative;">
-            <h3 class="project-header">Receant Work</h3>
+            <h3 class="project-header">Recent Work</h3>
             <p>
                 In the last few months, I have been interested in web applications and Javascript. 
                 The meta behind Javascript changes often and any modern web developer should be on the bleeding edge.
@@ -146,7 +136,7 @@
                     <div class="project-title">Cashify</div>
                     <hr>
                     <div class="project-desc">Over the summer, I was asked to create a web application for a class. The web application is a tool for financial transactions.</div>
-                    <a class="project-link popup" href="" onmouseover="infoPopUp()" onmouseout="infoPopOff()"><button class="grey-out">
+                    <a class="project-link popup" href="" onmouseover="infoPopUp()" onmouseout="infoPopOff()"><button class="grey-out" disabled>
                         <div id="myPopup" class="popuptext">This project isn't fitted to be online yet. Please check out my github for it!</div>
                         View Project
                     </button></a>
@@ -171,6 +161,7 @@
         </div>
     </div>
 
+    <!--Contact Information-->
     <div class="bgimg-3">
         <div class="caption">
             <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME FOR MORE INFORMATION</span>
@@ -182,6 +173,17 @@
                 <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
                 <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
             </div>
+        </div>
+    </div>
+
+    
+    <!--Footer-->
+    <div class="connect-container">
+        <div class="icons">
+            <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x pulse"></i></a>
+            <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x pulse"></i></a>
+            <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x pulse"></i></a>
+            <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x pulse"></i></a>
         </div>
     </div>
 
