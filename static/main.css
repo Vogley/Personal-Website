@@ -235,6 +235,7 @@ h3 {
   position: absolute;
   top: 85%;
   left: 37%;
+  z-index: 2001;
 }
 .open-bio{
   display: none;
