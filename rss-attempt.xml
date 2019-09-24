@@ -1,6 +1,8 @@
 <rss version="2.0">
     <channel>
         <title>Pick 6</title>
+        <googleplay:author>Tyler Vogel</googleplay:author>
+        <googleplay:email>therock9894@gmail.com</googleplay:email>
         <link>https://soundcloud.com/user-876544253</link>
         <description>Weekly discussions of NFL football.</description>
         <language>en-us</language>
