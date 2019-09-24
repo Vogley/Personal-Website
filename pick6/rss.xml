@@ -1,7 +1,11 @@
-<rss version="2.0" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+<rss version="2.0" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
         <title>Pick 6</title>
+        <itunes:owner>
+			<itunes:email> therock9894@gmail.com </itunes:email>
+		</itunes:owner>
         <googleplay:author>Tyler Vogel</googleplay:author>
+        <itunes:author>Tyler Vogel</itunes:author>
         <googleplay:email>therock9894@gmail.com</googleplay:email>
         <link>https://soundcloud.com/user-876544253</link>
         <image>
@@ -13,13 +17,12 @@
         <language>en-us</language>
         <item>
             <title>Pick 6 | Week 3 2019</title>
-            <author>therock9894@gmail.com</author>
             <enclosure url="https://www.vogley.org/pick6/week3_2019.mp3" length="57842522" type="audio/x-mp3"/>
             <description>
             Matt and Tyler break down the NFL teams' performances over the course of Week 3. Stats are covered, predictions are made, and Tyler's hope for the Eagles gets lower. Subscribe to PICK6 for weekly football updates!
             </description>
             <pubDate>Mon, 23 Sep 2019 20:02:00 GMT</pubDate>
-            <guid>https://www.vogley.org/pick6/item0001</guid>
+            <guid>0001</guid>
         </item>
     </channel>
 </rss>
