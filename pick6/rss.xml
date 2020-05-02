@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>Pick 6</title>
+        <itunes:owner>
+			<itunes:email> therock9894@gmail.com </itunes:email>
+		</itunes:owner>
+        <googleplay:author>Tyler Vogel</googleplay:author>
+        <itunes:author>Tyler Vogel</itunes:author>
+        <googleplay:email>therock9894@gmail.com</googleplay:email>
+        <author>Tyler Vogel</author>
+        <email>therock9894@gmail.com</email>
+        <link>https://soundcloud.com/user-876544253</link>
+        <image>
+            <url>https://www.vogley.org/images/pick6.png</url>
+            <title>Pick 6</title>
+            <link>https://soundcloud.com/user-876544253</link>
+        </image>
+        <description>Weekly discussions of NFL football.</description>
+        <language>en-us</language>
+        <item>
+            <title>Pick 6 | Week 3 2019</title>
+            <enclosure url="https://www.vogley.org/pick6/week3_2019.mp3" length="57842522" type="audio/x-mp3"/>
+            <description>
+            Matt and Tyler break down the NFL teams' performances over the course of Week 3. Stats are covered, predictions are made, and Tyler's hope for the Eagles gets lower. Follow Pick 6 for weekly football updates!
+            </description>
+            <pubDate>Mon, 23 Sep 2019 20:02:00 GMT</pubDate>
+            <guid>0001</guid>
+        </item>
+        <item>
+            <title>Pick 6 | Week 4 2019</title>
+            <enclosure url="https://www.vogley.org/pick6/week4_2019.mp3" length="57396365" type="audio/x-mp3"/>
+            <description>
+            Matt, Sean and Tyler break down the NFL teams' performances over the course of Week 4. A quarter of the NFL season is over, which teams will make large plays in this critical time for the NFL? Sean joins us today for his big takes of the week, and gives thought to who he thinks has out performed this season. Subscribe to PICK6 for weekly football updates!
+            </description>
+            <pubDate>Mon, 30 Sep 2019 19:23:00 GMT</pubDate>
+            <guid>0002</guid>
+        </item>
+    </channel>
+</rss>

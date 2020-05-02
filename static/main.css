@@ -235,6 +235,10 @@ h3 {
   position: absolute;
   top: 85%;
   left: 37%;
+  z-index: 2001;
+}
+.open-bio{
+  display: none;
 }
 
 
@@ -257,6 +261,7 @@ h3 {
   float: right;
 }
 .social {
+  display: inline-block;
   color: #000;
   cursor: pointer;
   transition: 0.5s;
@@ -265,6 +270,18 @@ h3 {
     border-color: var(--hover);
     color: #33E9FF;
   }
+
+@keyframes pulse {
+    from { color: #000; }
+    50% {color: #33E9FF;}
+    to { color: #000; }
+}
+.pulse {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
 
 /********************************
     5. Skills
@@ -280,19 +297,11 @@ h3 {
 .skill-info {
   width: 100%;
 }
-.skill-pic {
-  float: right;
-  position: relative; 
-  top: -60px;
-  right: 0;
-  height: 200px;
-  width: 200px;
-  padding: 10px;
-  display: block;
+.skill-info-container > hr{
+  display: none;
 }
-.skill-img {
-  width: auto;
-  height: 100%;
+#arrow {
+  display: none;
 }
 .skill-container {
   position: relative;
@@ -300,6 +309,7 @@ h3 {
   height: 180px;
 }
 .skill-container > .col {
+  display: block;
   float: left;
   width: 31%;
   padding: 1%;
@@ -480,6 +490,6 @@ button {
 ********************************/
 .social2 {
   position: absolute;
-  left: 40%;
+  left: 39%;
   top: 57%;
 }

@@ -1,192 +1,305 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="static/main.css">
-    <link rel="stylesheet" type="text/css" href="static/responsive.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--
+    * * * * NOTICE * * * *
+    Some code on this webpage is not my own.
+    Plugins are used that have been created by others.
+    This website is used as a landing page for my work.
+  -->
+  <title>Tyler Vogel</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Tyler J Vogel">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
 </head>
 <body>
-    <!--Intro-->
-    <div class="bgimg-1">
-        <div class="overlay"></div>
-        <div class="hover-card desc">
-            <div class="title-card">
-                <div class="tracking-in-expand text-center">Hello, I'm <u><span style="color:#51b1a1">Tyler</span></u></div>
-            </div>
-            <div class="para-card">
-                <button class="close">Close</button>
-                <div class="signature"><img src="https://fontmeme.com/permalink/190914/10c67ce81ea508ed5f8ae655fb484623.png" alt="signature-fonts" border="0"></div>
-                <div class="text"><p>I currently am a student at the University of Pittsburgh with a <b>hardware</b> computer engineering co-op position at Powercast. 
-                    Although my current position has been a great experience, I would like to move onto a position that enhances my <b>software</b> skills. 
-                    I have greatly improved both my web application skills and my object-oriented programming skills throughout the last year with my class work and <b>personal projects.</b>
-                        </p><p>My supervisors have always commented about my <b>hard-working</b> attitude towards every project I have been given. They consider me one of their best co-ops so far. 
-                            My co-op experience has shown me the importance of <b>teamwork</b> and learning from others. Ask me about my <b>current</b> work and projects!
-                </p></div>
-            </div>
+  <!--Header-->
+  <header class="header">
+    <div class="header-logo">
+      <a class="site-logo" href="index.html">
+        <img src="images/logo.png" alt="Homepage">
+      </a>
+    </div>
+    <nav class="header-nav">
+      <a href="#0" class="header-nav-close" title="close"><span>Close</span></a>
+      <div class="header-nav-content">
+        <h3>Navigation</h3>
+        <ul class="header-nav-list">
+          <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+          <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+          <li><a class="smoothscroll" href="#project" title="project">Projects</a></li>
+          <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+        </ul>
+        <p><a href="https://www.imdb.com/title/tt0789293/characters/nm0538683">"It is important to draw wisdom from many different places. If you take it from only one place, it becomes rigid and stale."</a></p>
+        <ul class="header-nav-social">
+          <li>
+            <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tylervogel98/"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Vogley"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div> 
+    </nav> 
+    <a class="header-menu-toggle" href="#0">
+      <span class="header-menu-text">Menu</span>
+      <span class="header-menu-icon"></span>
+    </a>
+  </header> 
+
+  <!--Homepage-->
+  <section id="home" class="home target-section" data-parallax="scroll" data-image-src="images/bg2.jpeg" data-natural-width=1500 data-natural-height=1000 data-position-y=center>
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+    <div class="home-content">
+      <div class="row home-content-main">
+        <h3>hello, my name is Tyler</h3>
+        <h1>Computer Engineer</h1>
+        <h1>Software Developer</h1>
+        <h1>Web Designer</h1>
+        <h1>Data Analyst</h1>
+        <div class="home-content-buttons">
+          <a href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top" class="smoothscroll btn btn--stroke">
+            Contact Me
+          </a>
+          <a href="#about" class="smoothscroll btn btn--stroke">
+            More About Me
+          </a>
         </div>
-        <div class="profile-pic">
-            <img class="profile-img" src="images/logo_transparent.png">
-            <div class="profile-desc">UNIVERSITY OF PITTSBURGH  COE 2020</div>
-            <a href="Resume_Fall19.pdf" class="resume"><button class="fill-up" onclick="toggleResume()">Resume</button></a>
+      </div>
+      <div class="home-content-scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+          <span>Scroll Down</span>
+        </a>
+      </div>
+      <div class="home-content-line"></div>
+    </div> 
+
+    <!--Social Media-->
+    <ul class="home-social">
+    <li>
+      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/tylervogel98/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+    </li>
+    <li>
+      <a href="https://github.com/Vogley"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+    </li>
+    </ul>
+    <a class="photo-credit" href="https://unsplash.com/@staticlaw?utm_source=unsplash&utm_medium=referral&utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Fabrizio Conti"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Fabrizio Conti</span></a>
+  </section> 
+
+  <!--About Page-->
+  <section id='about' class="about">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead subhead--dark">Skills & Experiences</h3>
+        <h1 class="display-1 display-1--light">About Me</h1>
+      </div>
+    </div> 
+    <div class="row about-desc" data-aos="fade-up">
+      <div class="col-full">
+        <p>
+          I am currently employeed at BNY Mellon as a Software Developer. Throughout my college years at University of Pittsburgh, I developed both software and hardware skills over a range of computer engineering topics from my classes and my experiences at work. I want to continue to expand my knowledge of both computer science and eletrical engineering topics. Below are a few of my favorite languages and technical skills I've picked up. I've recently developed skills in machine learning and deep learning during my last semester.
+          For the electrical engineer in me, I have learned a few skills within circuit design, circuit testing, and antenna theory.
+        </p>
+      </div>
+    </div> 
+    <div class="row skill-info-container about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+      <div id="skills" class="skill-container">
+        <div id="observation" class="col col-block stats-col">
+          <h2>Java</h2>
+          <div class="skill-bar">
+            <span style="width:85%;"></span>
+          </div>
+          <h2>Python</h2>
+          <div class="skill-bar">
+            <span style="width:75%;"></span>
+          </div>
+          <h2>C/Embedded</h2>
+          <div class="skill-bar">
+            <span style="width:40%;"></span>
+          </div>
+          <h2>Mobile Apps</h2>
+          <div class="skill-bar">
+            <span style="width:35%;"></span>
+          </div>
+        </div>
+        <div class="col stats-col">
+          <h2>Javascript</h2>
+          <div class="skill-bar">
+            <span style="width:95%;"></span>
+          </div>
+          <h2>HTML/CSS</h2>
+          <div class="skill-bar">
+            <span style="width:85%;"></span>
+          </div>
+          <h2>Machine Learning</h2>
+          <div class="skill-bar">
+            <span style="width:70%;"></span>
+          </div>
+          <h2>SQL</h2>
+          <div class="skill-bar">
+            <span style="width:45%;"></span>
+          </div>
+        </div>
+        <div class="col stats-col">
+          <h2>Circuit Design</h2>
+          <div class="skill-bar">
+            <span style="width:95%;"></span>
+          </div>
+          <h2>Embedded Systems</h2>
+          <div class="skill-bar">
+            <span style="width:75%;"></span>
+          </div>
+          <h2>Antenna Theory</h2>
+          <div class="skill-bar">
+            <span style="width:60%;"></span>
+          </div>
+          <h2>Signal Processing</h2>
+          <div class="skill-bar">
+            <span style="width:50%;"></span>
+          </div>
         </div>
     </div>
+  </div>
+  <div class="about-line about-line-right"></div>
+  <div class="about-line about-line-left"></div>
+  </section> 
 
-    <!--Footer-->
-    <div class="connect-container">
-        <div class="icons">
-            <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x"></i></a>
-            <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x"></i></a>
-            <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
-            <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
-        </div>
+  <!--Project Page-->
+  <section id='project' class="project">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">Personal project</h3>
+        <h1 class="display-2">What I've Been Up To</h1>
+      </div>
     </div>
-
-    <!--Skill Information-->
-    <div class="skill-info-container">
-        <h3 style="text-align:center;">Skill Set</h3>
-        <div class="skill-info">
-            <p>Throughout my college years, I have developed both <b>software</b> and <b>hardware</b> skills over a 
-                range of computer engineering topics from my classes and my experiences at work.
-                 I want to continue to expand my knowledge of both computer science and eletrical engineering topics.
-                 Below are a few of my favorite languages and technical skills I've picked up.
-                 Specifics within languages and topics, such as knowledge of certain <b>APIs</b>, are not listed here, and instead can be better understood
-                by an email chain or interview with me. </p>
-            <p>For the electrical engineer in me, I have picked up a few skills within <b>circuit design</b>, <b>circuit testing</b>, and <b>antenna theory</b>. I'm proud of the projects I have worked on at my company.
-                Ask about my co-op experience at Powercast to learn more about the technical skills I have picked up there, and my new provisional <b>patent</b> I have acquired.
+    <div class="row project-list block-1-2 block-tab-full">
+      <div class="col-block project-item" data-aos="fade-up">
+        <a href="https://www.dhyanrajamani.com">
+          <div class="project-icon">
+            <i class="fa fa-music"></i>
+          </div>
+          <div class="project-text">
+            <h3 class="h2">Music Website</h3>
+            <p>A website template modified from an existing template. This was a practice webpage so I could get used to hosting and creating stunning web templates. Cheack out Dhyan's music!
             </p>
-        </div>
-        <!--<div class="skill-pic">
-            <img class="skill-img" src="images/skills.png">
-        </div>-->
-        <div id="skills" class="skill-container">
-            <div class="col">
-                <h2>Java</h2>
-                <div class="skill-bar">
-                    <span style="width:75%;"></span>
-                </div>
-                <h2>Python</h2>
-                <div class="skill-bar color3">
-                    <span style="width:45%;"></span>
-                </div>
-                <h2>C/Embedded</h2>
-                <div class="skill-bar color5">
-                    <span style="width:30%;"></span>
-                </div>
-                <h2>C#</h2>
-                <div class="skill-bar color2">
-                    <span style="width:25%;"></span>
-                </div>
-            </div>
-            <div class="col">
-                <h2>Javascript</h2>
-                <div class="skill-bar color2">
-                    <span style="width:85%;"></span>
-                </div>
-                <h2>HTML/CSS</h2>
-                <div class="skill-bar color4">
-                    <span style="width:75%;"></span>
-                </div>
-                <h2>Mobile Apps</h2>
-                <div class="skill-bar color3">
-                    <span style="width:20%;"></span>
-                </div>
-                <h2>SQL</h2>
-                <div class="skill-bar">
-                    <span style="width:35%;"></span>
-                </div>
-            </div>
-            <div class="col">
-                <h2>Circuit Design</h2>
-                <div class="skill-bar color5">
-                    <span style="width:85%;"></span>
-                </div>
-                <h2>Embedded Systems</h2>
-                <div class="skill-bar color1">
-                    <span style="width:65%;"></span>
-                </div>
-                <h2>Antenna Theory</h2>
-                <div class="skill-bar color2">
-                    <span style="width:50%;"></span>
-                </div>
-                <h2>Signal Processing</h2>
-                <div class="skill-bar color4">
-                    <span style="width:40%;"></span>
-                </div>
-            </div>
-        </div>
-    </div>
+          </div>
+        </a>
+      </div>
 
-    <div class="bgimg-2">
-        <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">PERSONAL PROJECTS</span>
-        </div>
-    </div>
-
-    <!--Contact Information-->
-    <div class="project-container" style="position:relative;">
-            <h3 class="project-header">Receant Work</h3>
-            <p>
-                In the last few months, I have been interested in web applications and Javascript. 
-                The meta behind Javascript changes often and any modern web developer should be on the bleeding edge.
-                Below I have some projects that I have receantly completed. I always want to be gaining new 
-                coding skills and APIs, and projects like these help me learn.
+      <div class="col-block project-item" data-aos="fade-up">
+        <a href="https://www.powercastco.com/power-calculator/">
+          <div class="project-icon">
+            <i class="fa fa-bolt"></i>
+          </div>
+          <div class="project-text">
+            <h3 class="h2">Power Calculator</h3>
+            <p>I was asked to create a web application that can easily calculate wireless power using the Friis Equation for Powercast. This is the final result.
             </p>
-            <div class="projects">
-                <div class="col">
-                    <div class="project-title">Music Website</div>
-                    <hr>
-                    <div class="project-desc">A website template modified from an existing template. This was a practice webpage so I could get used to hosting and creating stunning web templates.</div>
-                    <a class="project-link" href="http://www.dhyanrajamani.com"><button class="fill-up">Go to Site</button></a>
+          </div>
+        </a>
+      </div>
 
-                </div>
-                <div class="col">
-                    <div class="project-title">Cashify</div>
-                    <hr>
-                    <div class="project-desc">Over the summer, I was asked to create a web application for a class. The web application is a tool for financial transactions.</div>
-                    <a class="project-link popup" href="" onmouseover="infoPopUp()" onmouseout="infoPopOff()"><button class="grey-out" disabled>
-                        <div id="myPopup" class="popuptext">This project isn't fitted to be online yet. Please check out my github for it!</div>
-                        View Project
-                    </button></a>
-                    
-                        
-                </div>
-                <div class="col">
-                    <div class="project-title">Breakout</div>
-                    <hr>
-                    <div class="project-desc">A small Javascript game that resembles the famous Breakout game. Game controls are in the (p)ause menu.</div>
-                    <a class="project-link" href="Js Breakout/breakout.html"><button class="fill-up">Play Breakout</button></a>
-                        
-                </div>
-                <div class="col">
-                    <div class="project-title">Audio FFTs</div>
-                    <hr>
-                    <div class="project-desc">A project where I dived into audio APIs to test how FFTs work in Javascript. Music can be played from a file or from the microphone.</div>
-                    <a class="project-link" href="Music JS/music.html"><button class="fill-up">View Simulation</button></a>
-                        
-                </div>
-            </div>
-        </div>
+      <div class="col-block project-item" data-aos="fade-up">
+        <a href="Music JS/music.html">
+          <div class="project-icon">
+            <i class="fa fa-signal"></i>
+          </div>
+          <div class="project-text">
+            <h3 class="h2">Audio Visualizer</h3>
+            <p>A project where I dived into audio APIs to test how FFTs work in Javascript. Music can be played from a file or from the microphone.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-block project-item" data-aos="fade-up">
+        <a href="https://github.com/Vogley">
+          <div class="project-icon">
+            <i class="fa fa-gear"></i>
+          </div>
+          <div class="project-text">
+            <h3 class="h2">More to Come!</h3>
+            <p>[Projects In Development]
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
+    <div class="project-line"></div>
+    <div class="project-line project-line-left"></div>
+  </section> 
 
-    <div class="bgimg-3">
-        <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME FOR MORE INFORMATION</span>
+  <!--Contact-->
+  <section id="Contact" class="home target-section" data-parallax="scroll" data-image-src="images/bg2.jpeg" data-natural-width=1500 data-natural-height=1000 data-position-y=center>
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+    <div class="home-content">
+      <div class="row home-content-main">
+        <h3>Like what you see?</h3>
+        <h1>Send Me An Email</h1>
+        <div class="home-content-buttons">
+          <a href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top" class="smoothscroll btn btn--stroke">
+            Contact Me
+          </a>
         </div>
-        <div class="social2" data-aos="fade-up">
-            <div class="icons">
-                <a class="social" href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin fa-3x"></i></a>
-                <a class="social" href="https://github.com/Vogley"><i class="fa fa-github fa-3x"></i></a>
-                <a class="social" href="https://twitter.com/T_Vogs"><i class="fa fa-twitter fa-3x"></i></a>
-                <a class="social" href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top"><i class="fa fa-envelope fa-3x"></i></a>
-            </div>
-        </div>
-    </div>
+      </div>
+    </div> 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="static/main.js"></script>
+    <!--Social Media-->
+    <ul class="home-social">
+    <li>
+      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/tylervogel98/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+    </li>
+    <li>
+      <a href="https://github.com/Vogley"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/tyler-vogel-a335b7140/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+    </li>
+    </ul>
+    <div class="contact-line"></div>
+  </section> 
+
+  <div class="template-credit">
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    &emsp;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website based on Template made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  </div>
+  <script src="js/plugins.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
+  <script src="js/extra.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
+  <script src="js/main.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0efddf1dd1ce783ce29e4002-|49" defer=""></script>
 </body>
 </html>

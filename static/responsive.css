@@ -1,4 +1,26 @@
 /********************************
+    1. General CSS
+********************************/
+@media screen and (max-width: 600px) {
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px 0px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+}
+
+/********************************
     3. Introduction
 ********************************/
 @media screen and (max-width: 975px) {
@@ -44,6 +66,7 @@
         width: 100%;
         height: 100%;
         background: none;
+        box-shadow: none;
     }
     .title-card {
         display: none;
@@ -54,32 +77,37 @@
         display: none;
     }
     .para-card {
-        height: 45%;
+        display: none;
+        height: 40%;
         position: absolute;
-        bottom: 0;
+        bottom: 7%;
+        background: none;
+        box-shadow: none;
+        outline: none;
     }
     .para-card > .text{
         margin-top: 20px;
-        height: 70%;
+        height: 90%;
         line-height: 28px;
         font-size: 20px;
         overflow: scroll;
+        text-align: center;
+        color: #111;
     }
     .para-card > .text > p{
         margin-top: 0;
     }
-    .close {
+    .open-bio {
         position: absolute;
-        bottom: 5%;
-        left: 10%;
+        top: 55%;
+        left: 0%;
+        width: 36.7%;
+        margin: 0px 31.2%;
+        display: block;
     }
     .signature {
-        bottom: 3%;
-        right: 10%;
-        width: 25%;
+        display: none;
     }
-
-
     .profile-pic {
         top: 5%;
         right: 0%;
@@ -89,6 +117,7 @@
     .profile-img {
         width: auto;
         height: 50%;
+        margin-left: 4%;
     }
     .profile-desc {
         text-align: center;
@@ -111,9 +140,66 @@
     }
 }
 
+/********************************
+    4. Footer
+********************************/
+@media screen and (max-width: 500px) {
+    .connect-container .icons {
+        margin: 0 10px 10px 0;
+        letter-spacing: 6.7vw;
+        color: #000;
+        float: right;
+    }
+}
 
 
 
+/********************************
+    5. Skills
+********************************/
+@media screen and (max-width: 800px) {
+    .skill-info-container {
+        color: #777;
+        background-color: white;
+        text-align: center;
+        padding: 20px 5vw 50px 5vw;
+        text-align: justify;
+        height: fit-content;
+    }
+}
+@media screen and (max-width: 640px) {
+    #skill-btn {
+        font: 30px "Lato", sans-serif;
+        position: relative;
+        top: -5px;
+    }
+    .skill-info-container > hr{
+        display: block;
+        margin: 0;
+    }
+    #arrow {
+        display: block;
+        width: 40%;
+        margin: 0 33%;
+    }
+    .skill-container {
+        height: 0;
+    }
+    .skill-container > .col {
+        width:100%;
+        padding: 0;
+        display: none;
+    }
+    .skill-container > .col > h2 {
+        margin: 0px 0px 5px 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .skill-bar {
+        margin: 5px;
+        width: 70%;
+    }
+}
 
 
 /********************************
@@ -157,5 +243,30 @@
       }
     .project-link {
         bottom: 0.1vw;
+    }
+}
+
+/********************************
+    7. Contact
+********************************/
+@media screen and (max-width: 860px) {
+    .social2 {
+        position: absolute;
+        left: 35%;
+        top: 65%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .social2 {
+        position: absolute;
+        left: 30%;
+        top: 55%;
+    }
+}
+@media screen and (max-width: 410px) {
+    .social2 {
+        position: absolute;
+        left: 23%;
+        top: 60%;
     }
 }
