@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boids Algorithm</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tyler J Vogel">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div>
+      <div id="speedOutput" class="sliderLabel" style="bottom: 80px;">Speed: 50</div>
+      <input type="range" min="1" max="100" value="50" class="slider" id="speedRange" style="bottom: 80px;">
+
+      <div id="attractionOutput" class="sliderLabel" style="bottom: 55px;">Attraction: 50</div>
+      <input type="range" min="1" max="100" value="50" class="slider" id="attractionRange" style="bottom: 55px;">
+      
+      <div id="repulsionOutput" class="sliderLabel" style="bottom: 30px;">Repulsion: 50</div>
+      <input type="range" min="1" max="100" value="50" class="slider" id="repulsionRange" style="bottom: 30px;">
+
+      <div id="centerOutput" class="sliderLabel" style="bottom: 5px;">Gravity: 50</div>
+      <input type="range" min="1" max="100" value="50" class="slider" id="centerRange" style="bottom: 5px;">
+    </div>
+  </body>
+  <script src=main.js></script>
+</html>
