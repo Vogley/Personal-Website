@@ -44,8 +44,8 @@ button,.btn {
 }
 
 .btn.btn--primary,button.btn--primary,input[type=submit].btn--primary,input[type=reset].btn--primary,input[type=button].btn--primary {
-  background: #3e87ca;
-  border-color: #3e87ca;
+  background: #4C94BD;
+  border-color: #4C94BD;
   color: #fff
 }
 
@@ -71,8 +71,8 @@ button,.btn {
 
 .btn--stroke,button.btn--stroke {
   background: 0 0!important;
-  border: .2rem solid #3e87ca;
-  color: #3e87ca
+  border: .2rem solid #4C94BD;
+  color: #4C94BD
 }
 
 .btn--stroke:hover,button.btn--stroke:hover {
@@ -133,7 +133,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #3e87ca;
+  color: #4C94BD;
   margin-top: 0;
   margin-bottom: 0
 }
@@ -294,7 +294,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 }
 
 .slick-slider .slick-dots li.slick-active button,.slick-slider .slick-dots li:hover button {
-  background: #3e87ca
+  background: #4C94BD
 }
 
 /* Header */
@@ -372,7 +372,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
   letter-spacing: .25rem;
   margin-bottom: 4.8rem;
   margin-top: .9rem;
-  color: #3e87ca
+  color: #4C94BD
 }
 
 .header-nav p {
@@ -500,7 +500,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  color: #3e87ca;
+  color: #4C94BD;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out
 }
@@ -696,8 +696,8 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 }
 
 .home-content-scroll a::before {
-  border-bottom: 2px solid #3e87ca;
-  border-right: 2px solid #3e87ca;
+  border-bottom: 2px solid #4C94BD;
+  border-right: 2px solid #4C94BD;
   content: '';
   display: block;
   height: 8px;
@@ -721,7 +721,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
   display: block;
   width: 2px;
   height: 10.2rem;
-  background-color: #3e87ca;
+  background-color: #4C94BD;
   position: absolute;
   right: 7.2rem;
   bottom: 0
@@ -767,34 +767,34 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 
 .home-social li a {
   display: block;
-  width: 33px;
-  height: 33px
+  width: 66px;
+  height: 66px
 }
 
 .home-social i,.home-social span {
   position: absolute;
   top: 0;
-  line-height: 33px;
+  line-height: 66px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out
 }
 
 .home-social i {
-  font-size: 14px;
+  font-size: 30px;
   right: 0;
   text-align: center;
   display: inline-block;
-  width: 33px;
-  height: 33px;
-  line-height: calc(33px - 4px);
+  width: 66px;
+  height: 66px;
+  line-height: calc(66px - 8px);
   border: 2px solid #fff;
   border-radius: 50%
 }
 
 .home-social span {
-  color: #3e87ca;
-  right: 4.5rem;
-  font-size: 1.3rem;
+  color: #4C94BD;
+  right: 10rem;
+  font-size: 2.5rem;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
@@ -979,7 +979,7 @@ html.no-csstransitions .home-content-main {
   }
 
   .home-social i {
-      font-size: 17px;
+      font-size: 30px;
       border: none
   }
 
@@ -1052,9 +1052,16 @@ html.no-csstransitions .home-content-main {
 .about {
   padding-top: 16.2rem;
   padding-bottom: 9rem;
-  background-color: #3e87ca;
+  background-color: #4C94BD;
   color: #010507;
   position: relative
+}
+
+.about hr {
+  border: 0;
+  height: 1px;
+  width: 100px;
+  background-color: rgb(173, 181, 189);
 }
 
 .about .section-header.has-bottom-sep::before {
@@ -1064,7 +1071,7 @@ html.no-csstransitions .home-content-main {
 .about-desc {
   font-size: 2.2rem;
   line-height: 1.75;
-  text-align: center;
+  /*text-align: center;*/
   max-width: 1024px
 }
 
@@ -1162,64 +1169,13 @@ html.no-csstransitions .home-content-main {
 }
 
 /* Skills */
+
 .skill-info-container {
   font-family: montserrat-medium,sans-serif;
   text-align: center;
-  padding: 20px 20px 50px 100px;
+  padding: 20px 20px 50px 50px;
   text-align: justify;
   height: fit-content;
-}
-
-.skill-info {
-  width: 100%;
-}
-
-.skill-info-container > hr{
-  display: none;
-}
-
-.skill-container {
-  position: relative;
-  width: 100%;
-  height: 180px;
-}
-
-.skill-container > .col {
-  display: block;
-  float: left;
-  width: 31%;
-  padding: 1%;
-}
-
-.skill-container > .col > h2 {
-  margin: 20px 0px 5px 5px;
-  font-size: 15px;
-}
-
-.skill-bar {
-  margin: 5px;
-  width: 100%;
-  height: 7px;
-	position: relative;
-  background: #3e87ca;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	padding: 1px;
-	box-shadow: inset 0 -1px 1px rgba(62, 135, 202, 0.3);
-}
-
-.skill-bar > span {
-  display: block;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-image: #003049;
-  box-shadow: 
-    inset 0 2px 9px  rgba(255,255,255,0.3),
-    inset 0 -2px 6px rgba(0,0,0,0.4);
-  position: relative;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
@@ -1231,37 +1187,8 @@ html.no-csstransitions .home-content-main {
     }
 }
 @media screen and (max-width: 640px) {
-    #skill-btn {
-        font: 30px "Lato", sans-serif;
-        position: relative;
-        top: 0px;
-    }
-
     .skill-info-container {
       padding: 20px 5vw 50px 5vw;
-    }
-
-    .skill-info-container > hr{
-      display: block;
-      height: 1px;
-      width: 250px;
-      background-color: rgba(255,255,255,.25);
-      bottom: 0;
-    }
-
-    .skill-container > .col {
-        width:100%;
-        padding: 0;
-    }
-
-    .skill-container > .col > h2 {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .skill-bar {
-        margin: 5px;
-        width: 70%;
     }
 }
 
@@ -1269,7 +1196,7 @@ html.no-csstransitions .home-content-main {
 .project {
   padding-top: 16.2rem;
   padding-bottom: 13.2rem;
-  background-color: #fff;
+  background-color: #E0FBFC;
   color: #010507;
   position: relative
 }
@@ -1309,12 +1236,12 @@ html.no-csstransitions .home-content-main {
 }
 
 .project-list .project-text:hover {
-  color: #3e87ca;
+  color: #4C94BD;
 }
 
 .project-list .project-icon {
   float: left;
-  color: #3e87ca;
+  color: #4C94BD;
   font-size: 4.8rem;
   margin-top: -.6rem;
   transition: 0.1s;
@@ -1444,7 +1371,7 @@ html.no-csstransitions .home-content-main {
   display: block;
   width: 2px;
   height: 10.2rem;
-  background-color: #3e87ca;
+  background-color: #4C94BD;
   position: absolute;
   right: 7.2rem;
   top: 0

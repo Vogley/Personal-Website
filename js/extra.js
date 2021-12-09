@@ -1,5 +1,5 @@
 //Observer for Animations
-let options = {
+/*let options = {
   root: null,
   rootMargin: '0px',
   threshold: 0.2
@@ -28,4 +28,7 @@ let callback = (entries, observer) => {
 
 let target = document.querySelector('#skills');
 let observer = new IntersectionObserver(callback, options);
-observer.observe(target);
+observer.observe(target);*/
+
+
+// Skill Chart Actions

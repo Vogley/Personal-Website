@@ -13,8 +13,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -76,10 +77,10 @@
     <div class="home-content">
       <div class="row home-content-main">
         <h3>hello, my name is Tyler</h3>
-        <h1>Computer Engineer</h1>
         <h1>Software Developer</h1>
         <h1>Web Designer</h1>
         <h1>Data Analyst</h1>
+        <h1>Computer Engineer</h1>
         <div class="home-content-buttons">
           <a href="mailto:tjv21@pitt.edu?Subject=Website%20Inquiry" target="_top" class="btn btn--stroke">
             Contact Me
@@ -100,7 +101,7 @@
     <!--Social Media-->
     <ul class="home-social">
     <li>
-      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
     </li>
     <li>
       <a href="https://www.instagram.com/tylervogel98/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
@@ -126,69 +127,29 @@
     <div class="row about-desc" data-aos="fade-up">
       <div class="col-full">
         <p>
-          I am currently employeed at BNY Mellon as a Software Developer. Throughout my college years at University of Pittsburgh, I developed both software and hardware skills over a range of computer engineering topics from my classes and my experiences at work. I want to continue to expand my knowledge of both computer science and eletrical engineering topics. Below are a few of my favorite languages and technical skills I've picked up. I've recently developed skills in machine learning and deep learning during my last semester.
-          For the electrical engineer in me, I have learned a few skills within circuit design, circuit testing, and antenna theory.
+          &emsp;Currently, I am employeed at BNY Mellon as a Software Developer. 
+          It's hard to put a specific title to my current role, as I find myself in many roles at once.
+          I work with a wide set of languages and frameworks in software, as well as performing as a project manager on certain tasks.
+          I love the ability to be flexible in my work, and how I go about solving a problem.
+          I think of it as the broader my skill-set, the more tools in my tool-belt. 
+          Obviously some tools get used more than others, but having a wider set gives me the option to use a specialized language or framework when needed.
+        </p>
+        <hr>
+        <p>
+          &emsp;Below are some of my favorite topics through-out the years. It is on a scale of 1 to 10, with 10 being an expert, and 1 being a novice. 
+          This is no-where near a comprehensive list, but I think this gives an idea of the type of engineer I am. 
+          I felt necessary to split them up from my college years and my time at BNY Mellon, as I have expanded certain parts of my software literacy since onboarding.
+          It also shows how I have grown since entering the CS world.
         </p>
       </div>
     </div> 
     <div class="row skill-info-container about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-      <div id="skills" class="skill-container">
-        <div id="observation" class="col col-block stats-col">
-          <h2>Java</h2>
-          <div class="skill-bar">
-            <span style="width:85%;"></span>
-          </div>
-          <h2>Python</h2>
-          <div class="skill-bar">
-            <span style="width:75%;"></span>
-          </div>
-          <h2>C/Embedded</h2>
-          <div class="skill-bar">
-            <span style="width:40%;"></span>
-          </div>
-          <h2>Mobile Apps</h2>
-          <div class="skill-bar">
-            <span style="width:35%;"></span>
-          </div>
+      <div class="skill-chart-container">
+        <div>
+          <canvas id="skill-chart"></canvas>
         </div>
-        <div class="col stats-col">
-          <h2>Javascript</h2>
-          <div class="skill-bar">
-            <span style="width:95%;"></span>
-          </div>
-          <h2>HTML/CSS</h2>
-          <div class="skill-bar">
-            <span style="width:85%;"></span>
-          </div>
-          <h2>Machine Learning</h2>
-          <div class="skill-bar">
-            <span style="width:70%;"></span>
-          </div>
-          <h2>SQL</h2>
-          <div class="skill-bar">
-            <span style="width:45%;"></span>
-          </div>
-        </div>
-        <div class="col stats-col">
-          <h2>Circuit Design</h2>
-          <div class="skill-bar">
-            <span style="width:95%;"></span>
-          </div>
-          <h2>Embedded Systems</h2>
-          <div class="skill-bar">
-            <span style="width:75%;"></span>
-          </div>
-          <h2>Antenna Theory</h2>
-          <div class="skill-bar">
-            <span style="width:60%;"></span>
-          </div>
-          <h2>Signal Processing</h2>
-          <div class="skill-bar">
-            <span style="width:50%;"></span>
-          </div>
-        </div>
+      </div>
     </div>
-  </div>
   <div class="about-line about-line-right"></div>
   <div class="about-line about-line-left"></div>
   </section> 
@@ -197,7 +158,7 @@
   <section id='project' class="project">
     <div class="row section-header has-bottom-sep" data-aos="fade-up">
       <div class="col-full">
-        <h3 class="subhead">Personal project</h3>
+        <h3 class="subhead">Personal projects</h3>
         <h1 class="display-2">What I've Been Up To</h1>
       </div>
     </div>
@@ -216,7 +177,7 @@
       </div>
 
       <div class="col-block project-item" data-aos="fade-up">
-        <a href="https://www.powercastco.com/power-calculator/">
+        <a href="https://www.powercastco.com/power-calculator-2/">
           <div class="project-icon">
             <i class="fa fa-bolt"></i>
           </div>
@@ -259,7 +220,7 @@
   </section> 
 
   <!--Contact-->
-  <section id="Contact" class="home target-section" data-parallax="scroll" data-image-src="images/bg2.jpeg" data-natural-width=1500 data-natural-height=1000 data-position-y=center>
+  <section id="contact" class="home target-section" data-parallax="scroll" data-image-src="images/bg2.jpeg" data-natural-width=1500 data-natural-height=1000 data-position-y=center>
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
     <div class="home-content">
@@ -277,7 +238,7 @@
     <!--Social Media-->
     <ul class="home-social">
     <li>
-      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+      <a href="https://twitter.com/T_Vogs"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
     </li>
     <li>
       <a href="https://www.instagram.com/tylervogel98/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
@@ -292,13 +253,8 @@
     <div class="contact-line"></div>
   </section> 
 
-  <div class="template-credit">
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    &emsp;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website based on Template made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </div>
   <script src="js/plugins.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
-  <script src="js/extra.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
+  <script src="js/skill_chart.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
   <script src="js/main.js" type="0efddf1dd1ce783ce29e4002-text/javascript"></script>
   <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0efddf1dd1ce783ce29e4002-|49" defer=""></script>
 </body>

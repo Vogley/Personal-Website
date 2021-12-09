@@ -59,12 +59,7 @@ function genBird(b) {
   ctx.lineTo(0, (2*scale));
   ctx.moveTo(0, 0);
   ctx.lineTo((4*scale), (1*scale));
-  ctx.moveTo(0, (2*scale));
-  ctx.lineTo((4*scale), (1*scale));
-  ctx.moveTo(0, (scale/2));
-  ctx.lineTo((4*scale), (1*scale));
-  ctx.moveTo(0, (1.5*scale));
-  ctx.lineTo((4*scale), (1*scale));
+  ctx.lineTo(0, (2*scale));
   ctx.closePath();
 
   ctx.lineWidth = 2;
@@ -80,7 +75,7 @@ function turnBird(b, dx, dy) {
   b.xVelocity += dx;
   b.yVelocity += dy;
   let turnAngle =  Math.atan2(b.yVelocity, b.xVelocity);
-  b.angle = turnAngle;
+  if(Math.abs(b.xVelocity) > 0.2 || Math.abs(b.yVelocity) > 0.2) b.angle = turnAngle;
 }
 
 function centerOfMass(bird) {
@@ -95,34 +90,10 @@ function centerOfMass(bird) {
   }
   yCenter = yCenter/(birds.length-1);
 
-  // Using TrIgEoMeTrY, calculate new angle to turn to.
-  //let theta = (Math.atan2(((bird.yPos - yCenter)), ((bird.xPos - xCenter))));
-
-  // Slow Down Bird when close
-  /*if(Math.abs(xCenter - bird.xPos) < 50) {
-    bird.xVelocity = bird.xVelocity/1;
-  }
-  if(Math.abs(yCenter - bird.yPos) < 50) {
-    bird.yVelocity = bird.yVelocity/1;
-  }*/
-
   let ret = {
     "dx" : (xCenter - bird.xPos)/(CENTER*SCALE),
     "dy" : (yCenter - bird.yPos)/(CENTER*SCALE)
   }
-
-  /*
-  if(Math.abs(theta - bird.angle) > Math.PI) {
-    if(Math.abs(theta - bird.angle) > Math.PI) {
-      ret["angle"] = (theta - bird.angle)/100;
-    }
-    else {
-      ret["angle"] = (2*Math.PI - (theta - bird.angle))/100;
-    }
-  }
-  else {
-    ret["angle"] = 0;
-  }*/
 
   return ret;
 }
@@ -209,7 +180,7 @@ function init() {
 function main() {
   //Reset the Canvas
   ctx.clearRect(0,0,canvas.width,canvas.height);
-
+ 
   drawBirds();
 
   birds.forEach(b =>{

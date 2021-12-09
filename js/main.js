@@ -1,3 +1,4 @@
+//Smooth Scrolling, menu toggling, email functions, etc.
 (function($) {
     "use strict";
     var cfg = {
