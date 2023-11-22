@@ -9,7 +9,7 @@ let skillData = {
   'Data Automation': {
     bnymellon: 8
   },
-  'Javascript': {
+  'JavaScript': {
     bnymellon: 7
   },
   'Front-End': {
@@ -30,7 +30,7 @@ let skillData = {
   'Data Design': {
     bnymellon: 5
   },
-  'Application Deploymen': {
+  'Application Deployment': {
     bnymellon: 4
   },
   'Hardware': {
@@ -69,6 +69,9 @@ const small_screen_config = {
     responsive: true,
     aspectRatio: 0.75,
     plugins: {
+      legend: {
+        display: false,
+      },
       title: {
         display: true,
         text: 'Computer Engineering Skills',
