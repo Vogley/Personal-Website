@@ -1,47 +1,40 @@
 /* Data  For my input */
 let skillData = {
-  'Java': {
-    college: 4,
-    career: 5
-  }, 'Javascript': {
-    college: 4,
-    career: 7
-  },
   'Python': {
-    college: 2,
-    career: 9
-  },
-  'SQL': {
-    college: 1,
-    career: 5
-  },
-  'Front-End': {
-    college: 5,
-    career: 7
+    bnymellon: 9
   },
   'APIs': {
-    college: 1,
-    career: 8
-  },
-  'Back-End': {
-    college: 2,
-    career: 6
-  },
-  'Machine Learning': {
-    college: 4,
-    career: 7
-  },
-  'Data Design': {
-    college: 1,
-    career: 5
+    bnymellon: 8
   },
   'Data Automation': {
-    college: 4,
-    career: 8
+    bnymellon: 8
+  },
+  'Javascript': {
+    bnymellon: 7
+  },
+  'Front-End': {
+    bnymellon: 7
+  },
+  'Machine Learning': {
+    bnymellon: 7
+  },
+  'SQL': {
+    bnymellon: 6
+  },
+  'Back-End': {
+    bnymellon: 5
+  },
+  'Java': {
+    bnymellon: 5
+  },
+  'Data Design': {
+    bnymellon: 5
+  },
+  'Application Deploymen': {
+    bnymellon: 4
   },
   'Hardware': {
-    college: 7,
-    career: 3
+    bnymellon: 3
   },
 }
 
@@ -51,16 +44,10 @@ const data = {
   labels: labels,
   datasets: [
     {
-      label: 'College',
-      data: Object.entries(skillData).map(e => e[1].college),
-      borderColor: 'rgb(61, 90, 128)',
-      backgroundColor: 'rgba(61, 90, 128, 0.85)'
-    },
-    {
-      label: 'Career',
-      data: Object.entries(skillData).map(e => e[1].career),
-      borderColor: 'rgb(238, 108, 77)',
-      backgroundColor: 'rgba(238, 108, 77, 0.85)'
+      label: 'BNY Mellon',
+      data: Object.entries(skillData).map(e => e[1].bnymellon),
+      borderColor: 'rgb(72,71, 71)',
+      backgroundColor: 'rgba(72, 71, 71, 0.85)'
     }
   ]
 };
@@ -82,12 +69,6 @@ const small_screen_config = {
     responsive: true,
     aspectRatio: 0.75,
     plugins: {
-      legend: {
-        position: 'right',
-        labels:{
-          color: '#000'
-        }
-      },
       title: {
         display: true,
         text: 'Computer Engineering Skills',
@@ -118,10 +99,7 @@ const large_screen_config = {
     aspectRatio: 2,
     plugins: {
       legend: {
-        position: 'top',
-        labels:{
-          color: '#000'
-        }
+        display: false,
       },
       title: {
         display: true,

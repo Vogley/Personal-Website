@@ -1072,7 +1072,9 @@ html.no-csstransitions .home-content-main {
   font-size: 2.2rem;
   line-height: 1.75;
   /*text-align: center;*/
-  max-width: 1024px
+  max-width: 1024px;
+  font-family: montserrat-bold,sans-serif;
+  letter-spacing: 1px;
 }
 
 .stats-col {
